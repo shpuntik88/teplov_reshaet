@@ -1,2 +1,0 @@
-# teplov_reshaet
-vovka
