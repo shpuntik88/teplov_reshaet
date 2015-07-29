@@ -13,11 +13,11 @@ height: 250px;
 width: 100%;
 max-width: 960px;
 }
-.logo {
+#logo {
 float: left;
 margin: 20px;
 }
-.logo:hover {
+#logo:hover {
 -moz-transform: rotate(15deg);
 -ms-transform: rotate(15deg);
 -webkit-transform: rotate(15deg);
@@ -46,6 +46,7 @@ padding: 20px;
 list-style-type: none;
 }
 li a{
+display: inline-block;
 font-size: 18px;
 font-weight: bold;
 text-transform: uppercase;
@@ -58,6 +59,7 @@ color: #f89406;
 font-weight: bolder;
 }
 .art_icon{
+background: url('../img/beer_bottle.png') 0 0 no-repeat transparent;
 }
 #content {
 clear: both;
@@ -115,4 +117,15 @@ padding: 10px;
 float: right;
 margin-right: 20px;
 margin-top: -40px;
+}
+@media screen and (max-width: 650px){
+#footer{
+height: 250px
+}
+.all_right {
+}
+.soc_icons {
+}
+.mail {
+}
 }

@@ -5,13 +5,26 @@
 		<title>Теплов решает!</title>
 		<link rel="shortcut icon" href="img/flavicon_teplov_16x16.ico">
 		<link rel="stylesheet" href="css/style.css">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	</head> 
 	<body>
 		<div class="wrapper">
 			<div id="header">
-				<a class="logo" href="index.html">
+				<a id="logo" href="index.html">
 					<img src="img/vovka_logo.png">
+				<audio id="sound-link" preload="auto">
+					<source src="audio/deviz.ogg" type="audio/mpeg">
+					<source src="audio/dieviz.mp3" type="audio/ogg">
+					<source src="audio/deviz.wav" type="audio/wav">
+				</audio>
 				</a>
+				<script>
+					var soundLink = $("#sound-link")[0];
+					$("#logo")
+					.mouseenter(function() {
+                   soundLink.play();
+					});
+				</script>
 				<a class="birka">
 					<img src="img/birka.png">
 				</a>
