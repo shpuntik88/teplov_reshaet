@@ -5,22 +5,35 @@
 		<title>Теплов решает!</title>
 		<link rel="shortcut icon" href="img/flavicon_teplov_16x16.ico">
 		<link rel="stylesheet" href="css/style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	</head> 
 	<body>
 		<div class="wrapper">
 			<div id="header">
-				<a class="logo" href="index.html">
+				<a id="logo" href="index.html">
 					<img src="img/vovka_logo.png">
+				<audio id="sound-link" preload="auto">
+					<source src="audio/deviz.ogg" type="audio/mpeg">
+					<source src="audio/dieviz.mp3" type="audio/ogg">
+					<source src="audio/deviz.wav" type="audio/wav">
+				</audio>
 				</a>
+				<script>
+					var soundLink = $("#sound-link")[0];
+					$("#logo")
+					.mouseenter(function() {
+                   soundLink.play();
+					});
+				</script>
 				<a class="birka">
 					<img src="img/birka.png">
 				</a>
 				<a class="number">+38(067)700-82-20
 				</a>
 				<ul class="menu">
-					<li> <a class="art_icon" href="art.html">Творчество</a> </li>
-					<li> <a class="philosophy_icon" href="philosophy.html">Философия</a> </li>
-					<li> <a class="drink_icon" href="drink.html">Душевность</a> </li>
+					<li> <a class="art_icon" href="art.html"> <img src="img/art_icon.svg">Творчество</a> </li>
+					<li> <a class="philosophy_icon" href="philosophy.html"> <img src="img/philosophy_icon.svg">Философия</a> </li>
+					<li> <a class="drink_icon" href="drink.html"> <img src="img/drink_icon.svg">Душевность</a> </li>
 				</ul>
 			</div>
 			<div id="content">

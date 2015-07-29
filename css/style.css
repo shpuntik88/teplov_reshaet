@@ -36,17 +36,14 @@ padding: 20px;
 float: right;
 }
 .menu {
-clear: right;
 float: right;
-margin: 90px auto 50px;
+margin: -50px 70px 0 100px;
 }
 li {
 float: left;
-padding: 20px;
 list-style-type: none;
 }
 li a{
-display: inline-block;
 font-size: 18px;
 font-weight: bold;
 text-transform: uppercase;
@@ -54,16 +51,21 @@ color: #333333;
 text-decoration: none;
 }
 li a:hover {
-font-size: 24px;
-color: #f89406;
-font-weight: bolder;
+background-color: #FFFFFF;
+padding: 20px 20px 20px 0px;
+border-radius: 10px;
+border: 2px solid #f89406;
 }
-.art_icon{
-background: url('../img/beer_bottle.png') 0 0 no-repeat transparent;
+li img {
+margin-right: 10px;
+margin-left: 20px;
+width: 50px;
+height: 50px;
+color: #333333;
 }
 #content {
 clear: both;
-margin: 50px auto 100px;
+margin: 100px auto 150px;
 font-size: 14px;
 color: #333333;
 width: 80%;
@@ -120,12 +122,19 @@ margin-top: -40px;
 }
 @media screen and (max-width: 650px){
 #footer{
-height: 250px
+height: 200px;
 }
-.all_right {
+.all_rights {
+float: none;
+text-align: center;
 }
 .soc_icons {
+top: 0;
+margin: auto;
 }
 .mail {
+float: none;
+text-align: center;
+margin: 0;
 }
 }
